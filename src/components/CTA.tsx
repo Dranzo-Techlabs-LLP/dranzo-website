@@ -11,7 +11,7 @@ export default function CTA() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as const }}
           className="relative overflow-hidden rounded-3xl border border-[var(--neon)]/30 bg-[radial-gradient(ellipse_at_top_left,rgba(61,255,110,0.18),transparent_55%),radial-gradient(ellipse_at_bottom_right,rgba(61,255,110,0.10),transparent_50%)] bg-black p-10 lg:p-16"
         >
           <div className="absolute -top-32 -right-32 w-80 h-80 bg-[var(--neon)]/10 blur-3xl rounded-full pointer-events-none" />

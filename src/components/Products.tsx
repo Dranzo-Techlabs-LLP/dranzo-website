@@ -102,7 +102,7 @@ function ProductCard({ p, index }: { p: Product; index: number }) {
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.6, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.6, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] as const }}
       className={`group relative overflow-hidden rounded-3xl border border-white/8 bg-[var(--panel)] hover:border-[var(--neon)]/40 transition-colors p-7 lg:p-9 ${p.span}`}
     >
       {/* hover wash */}

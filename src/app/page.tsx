@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import Products from "@/components/Products";
 import Approach from "@/components/Approach";
+import BackedBy from "@/components/BackedBy";
 import Manifesto from "@/components/Manifesto";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
@@ -15,6 +16,7 @@ export default function Home() {
       <Marquee />
       <Products />
       <Approach />
+      <BackedBy />
       <Manifesto />
       <CTA />
       <Footer />

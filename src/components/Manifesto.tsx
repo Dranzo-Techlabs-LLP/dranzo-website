@@ -37,7 +37,7 @@ export default function Manifesto() {
               initial={{ opacity: 0, y: 32 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.7, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.7, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] as const }}
               className="text-3xl sm:text-5xl lg:text-7xl font-semibold tracking-[-0.025em] leading-[1.05] max-w-5xl"
             >
               <span className="text-zinc-200">{a} </span>
